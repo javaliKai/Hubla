@@ -1,3 +1,3 @@
 # Static
 
-this is a folder that contains a collection(s) of style
+this is a folder that contains a collection of css and javascript

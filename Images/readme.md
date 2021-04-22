@@ -1,3 +1,3 @@
 # Images
 
-this is a coolection of used image
+this is a collection of used image

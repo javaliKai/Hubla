@@ -37,13 +37,9 @@ a {
 .content-left {
     width: 50%;
     background-color: var(--fourth);
-    /* background-color: whitesmoke; */
     justify-content: center;
     align-items: center;
     position: relative;
-    /* background-image: url("./Images/girl-laptop.jpg");
-    background-position: 0 -300px;
-    opacity: 0.6; */
     animation: drop 1.5s ease;
 
 }
@@ -74,8 +70,6 @@ a {
     text-align: center;
     margin-bottom: 50px;
 }
-.content-left .description .description-icon {
-}
 
 .content-left .description .description-icon img {
     width: 50px;
@@ -95,7 +89,6 @@ a {
     background-color: var(--second);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     color: var(--fourth);
     animation: lift 1.5s ease;
 }

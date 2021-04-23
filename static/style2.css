@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
+
+:root {
+    /* color scheme list */
+    --first: rgb(10,197,168);
+    --second: rgb(44,60,91);
+    --third: rgb(85,106,174);
+    --fourth: rgb(235,235,235);
+    --fifth: rgb(245,245,245);
+}
+
+body {
+    font-size: 14px;
+    color: #828282;
+    background:#ECECEC;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    margin: 25px auto; 
+    width: 600px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 35px 0 35px 0;
+}
+
+.header a,
+.body a {
+    background-color: #878a8db2;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    background-color: #0091ad;
+}
+
+.login.active {
+    background-image: linear-gradient(to right, #455e89 , #0091ad);
+}
+
+.header .register.active{
+    background-image: linear-gradient(to right, #455e89 , #0091ad);
+}
+
+.body input{ 
+    display: block;
+    margin-top: 50px;
+    width: 500px;
+    height: 15px;
+    padding:10px;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.body select option {
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.body select {
+    display: block;
+    margin-top: 50px;
+    width: 522px;
+    height: 40px;
+    color: #828282; 
+    text-indent: 10px;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+    color: #828282;
+}
+
+::-webkit-datetime-edit-text {
+    color: #828282;
+    padding: 7px;
+}
+
+.body button {
+    margin-top: 50px;
+    width: 530px;   
+    padding: 10px; 
+    font-family: "Merriweather Sans", sans-serif;
+    background-color: var(--third);
+    color: var(--fourth);
+
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.body button:hover {
+    background-color: var(--fourth);
+    color: var(--third);
+    border: 1px solid var(--third);
+}
+
+.footer h3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.body p {
+    margin: 10px;
+}
+
+.footer {
+    background-color: var(--second);
+    text-align: center;
+    padding: 15px 15px;
+    flex-grow: 0;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: var(--fourth);
+    margin-right: 16px;
+    font-size: 13px;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}

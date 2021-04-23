@@ -3,4 +3,4 @@ To avoid execution policy: Set-ExecutionPolicy Unrestricted -Scope Process (only
 to activate virtual environment for working with flask: venv\Scripts\activate
 to deactivate: deactivate
 
-setting which flask app should be run: set FLASK_APP=<flask_app>
+setting which flask app should be run: set FLASK_APP=<flask_app.py>

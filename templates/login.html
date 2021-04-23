@@ -1,0 +1,21 @@
+{% extends "reglog.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    <img src="../static/Images/hubla-only-logo.png" alt="hubla-logo">
+    <form action="/register" method="POST">
+        <input type="text" name="username" required placeholder="Username" autocomplete="off">
+                
+        
+        <input type="password" name="password" required placeholder="Password" autocomplete="off">
+        <input type="password" name="retype" required placeholder="Re-type Password" autocomplete="off">
+        
+        <select name="gender" id="gender" style="visibility: hidden;">
+            <option value="male" class="select">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}

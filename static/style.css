@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
+
+:root {
+    /* color scheme list */
+    --first: rgb(10,197,168);
+    --second: rgb(44,60,91);
+    --third: rgb(85,106,174);
+    --fourth: rgb(235,235,235);
+    --fifth: rgb(245,245,245);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.content-left {
+    width: 50%;
+    background-color: var(--fourth);
+    /* background-color: whitesmoke; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-image: url("./Images/girl-laptop.jpg");
+    background-position: 0 -300px;
+    opacity: 0.6; */
+    animation: drop 1.5s ease;
+
+}
+/* pseudo element */
+.content-left::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("./Images/laptop-bg.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.30; 
+    
+}
+
+.content-left .image {
+    position: relative;
+    margin: auto;
+    width: 240px;
+}
+
+.content-left .description {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content-left .description .description-icon {
+}
+
+.content-left .description .description-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.content-left .description .description-list{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 19px;
+    color: var(--second);
+    list-style: none;
+}
+
+.content-right {
+    width: 50%;
+    background-color: var(--second);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: var(--fourth);
+    animation: lift 1.5s ease;
+}
+
+.content-right-items {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.content-right-items h2 {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.content-right-items h4 {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.content-right-items button {
+    font-family: "Merriweather Sans", sans-serif;
+    display: block;
+
+}
+
+.content-right-items .register {
+    margin-bottom: 10px;
+    width: 550px;
+    background-color: var(--third);
+    color: var(--fourth);
+    transition: ease 0.7s;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content-right-items .register:hover {
+    background-color: var(--fourth);
+    color: var(--third);
+    transition: ease 0.7s;
+    font-size: 1.2rem;
+}
+
+.content-right-items .login {
+    width: 550px;
+    background-color: var(--second);
+    color: var(--fourth);
+    border: 1px solid var(--third);
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content-right-items .login:hover {
+    background-color: var(--fourth);
+    color: var(--third);
+    transition: ease 0.7s;
+    font-size: 1.2rem;
+}
+
+
+.footer {
+    background-color: var(--second);
+    text-align: center;
+    padding: 15px 15px;
+    flex-grow: 0;
+    animation: pull-side 1.5s ease;
+}
+
+.footer-item {
+    color: var(--fourth);
+    margin-right: 16px;
+    font-size: 13px;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
+
+/* making drop animation */
+@keyframes drop {
+    /* start */
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* making lift animation */
+@keyframes lift {
+    /* start */
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* making pull-side animation */
+@keyframes pull-side {
+    /* start */
+    0%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

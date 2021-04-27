@@ -1,5 +1,5 @@
 // querying menu item element
-let home = document.querySelectorAll(".menu-item");
+let home = document.querySelectorAll(".btn");
 
 // add event while clicked to inject active class
 for (let i = 0; i < home.length; i++) {

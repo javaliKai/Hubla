@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
+
+/* .left-sidebar {
+    background-color: bisque;
+}
+
+.main {
+    background-color: salmon;
+}
+
+.right-sidebar-container {
+    background-color: teal;
+} */
+
+:root {
+    /* color scheme list */
+    --first: rgb(10,197,168);
+    --second: rgb(44,60,91);
+    --third: rgb(85,106,174);
+    --fourth: rgb(235,235,235);
+    --fifth: rgb(245,245,245);
+}
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.layout {
+    /* position: fixed does not work in grid container */
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
+}
+
+.layout .right-sidebar {
+    position: fixed;
+}
+
+.layout .logo {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+.sidebar-menu {
+    position: fixed;
+}
+
+.sidebar-menu .menu-item {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--second);
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+.sidebar-menu .menu-item:hover {
+    background-color:rgba(85, 106, 174, 0.445);
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.sidebar-menu .active {
+    background-color: var(--third);
+    color: var(--fourth);
+    border-radius: 45px;
+}
+.sidebar-menu .menu-item .icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px; 
+}
+
+.feed {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+}
+
+.feed .author-picture {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feed .header {
+    display: flex;
+}
+
+.feed .author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+}
+
+.feed .author-id {
+    color: #5b7083;
+    font-size: 15px;
+}
+
+.feed .activity-time {
+    margin-left: 5px;
+    color: #6577;
+}
